@@ -63,7 +63,7 @@ function renderProducts(list) {
   productsContainer.innerHTML = paginated
     .map(
       (p) => `
-    <div class="product-card bg-white rounded-xl shadow hover:shadow-lg transition flex flex-col overflow-hidden">
+    <div class="product-card  rounded-xl shadow hover:shadow-lg transition flex flex-col overflow-hidden">
       <img src="${p.thumbnail}" onclick="viewProduct(${p.id})"
            class="cursor-pointer w-full h-64 object-cover" alt="${p.title}" />
       <div class="p-4 flex flex-col flex-1">
