@@ -27,7 +27,7 @@ function addToCartById(id) {
 
   localStorage.setItem("cart", JSON.stringify(cart));
 
-  // Update cart counter
+
   const cartCounter = document.getElementById("cart-count");
   if (cartCounter) {
     const count = cart.reduce((sum, item) => sum + item.quantity, 0);
