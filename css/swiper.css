@@ -1,0 +1,47 @@
+
+.testimonial-swiper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.testimonial-swiper .swiper-slide>div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper {
+    padding-bottom: 64px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: static;
+    background-color: #25339d;
+    color: #DDC7BB;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: #1d2a3a;
+}
+
+.swiper-pagination {
+    margin-top: 16px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Products — Mercation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/product-card.css">
+</head>
+ 
+<body class="bg-gradient-to-r from-blue-50 via-white to-yellow-50 text-gray-800">
+
+<!-- HEADER -->
+<header
+    class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-lg shadow-sm z-50 flex justify-between items-center px-6 lg:px-24 py-4">
+    <!-- logo -->
+<a onclick="window.location.href='../index.html'"
+    class="text-2xl font-bold tracking-wide text-gray-900 hover:text-blue-600 cursor-pointer">
+    Mercation
+</a>
+
+<nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
+    <a href="../index.html" class="hover:text-blue-600">HOME</a>
+    <a href="../index.html#products" class="hover:text-blue-600">SHOP</a>
+    <a href="../index.html#new-arrivals" class="hover:text-blue-600">NEW ARRIVAL</a>
+    <a href="../index.html#best-selling" class="hover:text-blue-600">SALE</a>
+    <a href="../index.html#blog" class="hover:text-blue-600">BLOG</a>
+    <a href="../index.html#support" class="hover:text-blue-600">SUPPORT</a>
+</nav>
+
+    <!-- icons -->
+    <div class="flex space-x-5 text-gray-600 text-xl relative">
+        
+        <a href="cart.html" class="icon relative hover:text-blue-600">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count"
+                class="absolute -top-2 -right-3 bg-blue-600 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">0</span>
+        </a>
+        <button class="icon hover:text-blue-600"><i class="fas fa-user"></i></button>
+    </div>
+
+    <!-- Mobile menu Button -->
+    <div class="md:hidden flex ">
+        <button id="mobile-menu-button" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
+    </div>
+</header>
+
+<!-- Mobile menu -->
+<div id="mobile-menu"
+    class="hidden fixed top-16 left-0 w-full bg-white shadow-md z-40 flex flex-col items-center space-y-4 py-6 md:hidden">
+<a href="index.html" class="text-gray-600 hover:text-blue-600 text-lg">HOME</a>
+<a href="index.html#products" class="text-gray-600 hover:text-blue-600 text-lg">SHOP</a>
+<a href="index.html#new-arrivals" class="text-gray-600 hover:text-blue-600 text-lg">NEW ARRIVAL</a>
+<a href="index.html#best-selling" class="text-gray-600 hover:text-blue-600 text-lg">SALE</a>
+<a href="index.html#blog" class="text-gray-600 hover:text-blue-600 text-lg">BLOG</a>
+<a href="index.html#support" class="text-gray-600 hover:text-blue-600 text-lg">SUPPORT</a>
+</div>
+
+
+
+<main class="pt-28 max-w-screen-xl mx-auto px-6">
+
+    <div class="flex justify-start mb-6">
+        <button onclick="history.back()"
+            class="flex items-center gap-2 px-5 py-2 rounded-full text-black hover:bg-blue-200 transition">
+            <i class="fas fa-arrow-left"></i>
+            Back
+        </button>
+    </div>
+
+    <h1 id="categoryTitle" class="text-4xl font-bold mb-8 text-center"></h1>
+
+    <div id="filtered-products" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"></div>
+
+    <div id="pagination" class="flex justify-center mt-10 gap-2"></div>
+</main>
+
+    <script src="js/products.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

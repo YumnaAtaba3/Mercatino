@@ -1,0 +1,34 @@
+        :root {
+            --primary-color: #3b82f6;
+            /* blue 500 */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .btn-primary:hover {
+            background-color: #2563eb;
+            /* blue 600 */
+        }
+
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+
+        /* Custom styling for quantity input */
+        .quantity-control input[type="number"]::-webkit-inner-spin-button,
+        .quantity-control input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .quantity-control input[type="number"] {
+            -moz-appearance: textfield;
+        }
