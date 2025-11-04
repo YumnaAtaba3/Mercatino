@@ -8,6 +8,12 @@ const categoriesAllowed = [
   "mens-shoes",
   "womens-dresses",
   "womens-shoes",
+  "skincare",
+  "womens-watches",
+  "skincare",
+  "womens-watches",
+  "beauty",
+  "smartphones",
 ];
 let cartCount = 0;
 let allProducts = [];

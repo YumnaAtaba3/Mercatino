@@ -12,8 +12,16 @@ categoryTitle.textContent =
 
 const categoryMap = {
   men: ["mens-shirts", "mens-shoes"],
-  women: ["womens-dresses", "womens-shoes", "womens-jewellery", "womens-bags"],
-  accessories: ["sunglasses", "fragrances"],
+  women: [
+    "womens-dresses",
+    "womens-shoes",
+    "womens-jewellery",
+    "womens-bags",
+    "skincare",
+    "womens-watches",
+    "beauty",
+  ],
+  accessories: ["sunglasses", "fragrances", "smartphones"],
   shoes: ["mens-shoes", "womens-shoes"],
 };
 
@@ -27,6 +35,10 @@ const categoriesAllowed = [
   "mens-shoes",
   "womens-dresses",
   "womens-shoes",
+  "skincare",
+  "womens-watches",
+  "beauty",
+  "smartphones",
 ];
 
 let allProducts = [];
