@@ -25,7 +25,7 @@ function updateCartCount() {
   return count;
 }
 
-// Update subtotal, tax, and grand total
+
 function updateTotal() {
   const subtotal = cart.reduce(
     (sum, item) => sum + item.price * item.quantity,
